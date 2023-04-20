@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="Medform.css">
+    <script type="text/Javascript" src="Medform.js"></script>
+</head>
+<body>
+    <form id="myform"  name="myform" onsubmit="return (formValidation())" >
+        <img src="starlife.png">
+        <address><b>ACE HEALTH CARE CONSULT </b><br>
+            3521 Maloy Court, Lawrence, Kansas. <br>
+            123-456-789-00 <br>
+            www.no@gmail.com
+        </address>
+        
+        <h2>New Patient Registration</h2>
+        <h4>Please fill the required information.</h4>
+
+        <fieldset>
+            <legend>General Patient information</legend>
+            <label>Name
+                <input name="firstName" type="text" placeholder="First-name" >
+                <input name="lastName" type="text" placeholder="Last-name" >
+            </label>
+
+            <label>Sex 
+                <select name="sex">
+                    <option value="choose">select your sex</option>
+                    <option value= "male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="nonBinary">Non-binary</option>
+                    <option value="noOption">Prefer not to say</option>
+                </select>
+            </label>
+
+            <label>Date of Birth
+                <input type="date" name="date">
+            </label>
+
+            <label>Mobile Number
+                <input name="mobile" type="tel" placeholder="your mobile number">
+            </label>
+
+            <label>Email 
+                <input name="email" type="email" placeholder="your email id">
+            </label>
+
+            <div >Address 
+                <input name="address" type="text" placeholder="Street Address" >
+                <input type="text" placeholder="Street Address Line 2">
+                <input name="city" type="text" placeholder="City" >
+                <input name="state" type="text" placeholder="State/Province" >
+                <input type="text" placeholder="Postal / Zip Code">
+            </div>
+
+            <label> Marital Status
+                <select name="status">
+                    <option value="yourStatus">your status</option>
+                    <option value="single">Single</option>
+                    <option value="married">Married</option>
+                    <option value="divorced">Divorced</option>
+                    <option value="noChoice">Prefers not to say</option>
+                </select>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Emergency Contact</legend>
+
+            <label>First Name 
+                <input name="kinFirstName" type="text" >
+            </label>
+
+            <label>Last Name
+                <input name="kinLastName" type="text" >
+            </label>
+
+            <label>Relationship
+                <input name="relationship" type="text">
+            </label>
+
+            <label>Contact Number
+                <input name="kinContact" type="text">
+            </label>
+
+            <label>Family Doctor name
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+                <input type="tel" placeholder="Mobile Number">
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Patient Medical History</legend>
+            <label>Are you currently on any medication
+                <select name="medication">
+                    <option value="choice">options</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </label>
+
+            <label>Can you please list out all the drugs your taking
+                <textarea name="listDrugs"></textarea>
+            </label>
+
+            <label>Please list any drug allergies
+                <textarea></textarea>
+            </label>
+
+            <div id="history">Have you ever had (Please check all that apply)
+                <label>
+                    <input type="checkbox">
+                    None
+                </label>
+                <label>
+                    <input type="checkbox">
+                    Anemia
+                </label>
+                <label>
+                    <input type="checkbox">
+                    Asthma
+                </label>
+                <label>
+                    <input type="checkbox">
+                    Arthritis
+                </label>
+                <label>
+                    <input type="checkbox">
+                    Cancer
+                </label>
+                <label>
+                    <input type="checkbox">
+                    Gout
+                </label>
+                <label>
+                    <input type="checkbox">
+                    Diabetes
+                </label>
+                <label>
+                    <input type="checkbox">
+                    Emotional Disorder
+                </label>
+                <label>
+                    <input type="checkbox">
+                    Epilepsy Seizures
+                </label>
+                <label>
+                    <input type="checkbox">
+                    Fainting Spells
+                </label>
+                <label>
+                    <input type="checkbox">
+                    Gallstones
+                </label>
+                <label>
+                    <input type="checkbox">
+                    Heart Attack
+                </label>
+                <label>
+                    <input type="checkbox">
+                    Rheumatic Fever
+                </label>
+                <label>
+                    <input type="checkbox">
+                    High Blood Pressure
+                </label>
+                <label>
+                    <input type="checkbox">
+                    Digestive Problems
+                </label>
+                <label>
+                    <input type="checkbox">
+                    Ulcerative Colitis
+                </label>
+                <label>
+                    <input type="checkbox">
+                    Ulcer Disease
+                </label>
+                <label>
+                    <input type="checkbox">
+                    Hepatitis
+                </label>
+                <label>
+                    <input type="checkbox">
+                    Kidney Disease
+                </label>
+                <label>
+                    <input type="checkbox">
+                    Liver Disease
+                </label>
+                <label>
+                    <input type="checkbox">
+                    Sleep Apnea
+                </label>
+                <label>
+                    <input type="checkbox">
+                    Use a C-PAP machine
+                </label>
+                <label id="extra"> Other illnesses not listed above
+                    <textarea></textarea>
+                </label>
+                <label id="extra"> Please list every surgical operations and date conducted
+                    <textarea></textarea>
+                </label>
+                <label id="extra"> Are there other information you want to share about your medical history
+                    <textarea></textarea>
+                </label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Healthy and Unhealthy Habits</legend>
+            <div id="habits">Exercise
+                <label>
+                    <Input type="radio">
+                    Never
+                </label>
+                <label>
+                    <Input type="radio">
+                    1-2 days
+                </label>
+                <label>
+                    <Input type="radio">
+                    3-4 days
+                </label>
+                <label>
+                    <Input type="radio">
+                    5+ days
+                </label>
+            </div >
+
+            <div id="habits">Eating following a diet
+                <label>
+                    <Input type="radio">
+                I have a loose diet  
+                </label>
+                <label>
+                    <Input type="radio">
+                    I have a strict diet 
+                </label>
+                <label>
+                    <Input type="radio">
+                    I don't have a diet plan
+                </label>
+            </div> 
+
+            <div id="habits">Alcohol Consumption
+                <label>
+                    <Input type="radio">
+                    I don't drink
+                </label>
+                <label>
+                    <Input type="radio">
+                    1-2 cups/day
+                </label>
+                <label>
+                    <Input type="radio">
+                    3-4 cups/day
+                </label>
+                <label>
+                    <Input type="radio">
+                    5+ cups/day
+                </label>
+            </div>
+
+            <div id="habits">Caffeine Consumption
+                <label>
+                    <Input type="radio">
+                    I don't use caffeine
+                </label>
+                <label>
+                    <Input type="radio">
+                    1-2 cups/day
+                </label>
+                <label>
+                    <Input type="radio">
+                    3-4 cups/day
+                </label>
+                <label>
+                    <Input type="radio">
+                    5+ cups/day
+                </label>
+            </div>
+
+            <div id="habits">Do you smoke?
+                <label>
+                    <Input type="radio">
+                    No
+                </label>
+                <label>
+                    <Input type="radio">
+                    0-1 pack/day
+                </label>
+                <label>
+                    <Input type="radio">
+                    1-2 pack/day
+                </label>
+                <label>
+                    <Input type="radio">
+                    2+ pack/day
+                </label>
+            </div>        
+        </fieldset>
+        <button type="submit">Submit</button>
+        
+    </form>
+
+    
+</body>
+</html>

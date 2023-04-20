@@ -1,0 +1,184 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 90%;
+    font-size: .8rem;
+}    
+
+body {
+    width: 100%;
+    background: url("medical.jpg") no-repeat;
+    background-size: cover;
+    opacity: .8;
+}
+
+img{
+    width: 40px;
+    height: auto;
+    margin: 10px;
+    float: left;
+}
+
+address{
+    text-align: right;
+    margin: 10px 5px 0px 0px;
+}
+
+#myform {
+    width: 80%;
+    height: auto;
+    background-color: white;
+    margin: 0px auto;
+    padding: 10px;
+    }
+
+label {
+    margin: 20px auto;
+    display: block;
+}
+
+div #extra textarea{
+    margin: 10px auto;
+}
+
+div{
+    margin: 10px auto;
+}
+
+input[type="text"], [type="tel"], [type="email"]  {
+    width: 97%;
+    margin-bottom: 5px;
+    border-radius: 5px;
+   border-width: thin;
+   box-shadow: 2px 1px 1px;
+   padding: .5%;
+}
+
+input[type="date"], select{
+    border-radius: 5px;
+    border-width: thin;
+    display: block;
+    box-shadow: 2px 1px 1px;
+}
+
+textarea {
+    border-radius: 5px;
+    border-width: thin;
+    margin-top: 0px;
+    width: 97%;
+    padding: .5%;
+    height: 50px;
+    resize: none;
+    box-shadow: 2px 1px 1px;
+}
+
+
+legend{
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: blue;
+}
+
+fieldset{
+    border-radius: 5px;
+    border-width: thin;
+    box-shadow: 1px 1px 1px;
+}
+
+button{
+    display: block;
+    border-radius: 5px;
+    border-width: thin;
+    background-color: green;
+    color: white;
+    margin: 10px auto;
+    width: 50%;
+    box-shadow: 1px 1px 15px green;
+    
+}
+
+button:active{
+   
+    border: 5px groove green;
+    
+}
+
+#habits {
+    margin-top: 20px;
+}
+
+#habits label, #history label {
+    margin: 5px;  
+}
+
+@media screen and (min-width:620px) and (max-width:768px){
+    html {
+        font-size: 1rem;
+    }
+
+    button{
+        font-size: 1rem;
+    }
+
+    input[type="text"], [type="tel"], [type="email"] input[type="date"], select {
+        height: 1rem;
+    }
+
+    textarea {
+        height: 6rem;
+    }
+
+    img{
+        width: 55px;
+        height: auto;
+        margin: 10px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1060px){
+    html {
+        font-size: 1.2rem;
+    }
+
+    button{
+        font-size: 1.2rem;
+    }
+
+    input[type="text"], [type="tel"], [type="email"], input[type="date"], select {
+        height: 1.5rem;
+    }
+
+    textarea {
+        height: 10rem;
+    }
+
+    img{
+        width: 70px;
+        height: auto;
+        margin: 10px;
+    }
+}
+
+
+@media screen and (min-width:1061px){
+    html {
+        font-size: 1.2rem;
+    }
+
+    button{
+        font-size: 1.2rem;
+    }
+
+    input[type="text"], [type="tel"], [type="email"], input[type="date"], select {
+        height: 1.5rem;
+    }
+
+    textarea {
+        height: 10rem;
+    }
+
+    img{
+        width: 90px;
+        height: auto;
+        margin: 10px;
+    }
+}
